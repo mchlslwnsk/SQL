@@ -1,0 +1,35 @@
+USE [DWH_BIZ02]
+GO
+DELETE FROM [dbo].[dGodzina]
+
+GO
+INSERT INTO [dbo].[dGodzina](dGo_id,dGo_godzina,dGo_pora_dnia)
+SELECT 1, 0, 'Noc' UNION ALL
+SELECT 2, 1, 'Noc' UNION ALL
+SELECT 3, 2, 'Noc' UNION ALL
+SELECT 4, 3, 'Noc' UNION ALL
+SELECT 5, 4, 'Noc' UNION ALL
+SELECT 6, 5, 'Noc' UNION ALL
+SELECT 7, 6, 'Rano' UNION ALL
+SELECT 8, 7, 'Rano' UNION ALL
+SELECT 9, 8, 'Rano' UNION ALL
+SELECT 10, 9, 'Rano' UNION ALL
+SELECT 11, 10, 'Rano' UNION ALL
+SELECT 12, 11, 'Po³udnie' UNION ALL
+SELECT 13, 12, 'Po³udnie' UNION ALL
+SELECT 14, 13, 'Po³udnie' UNION ALL
+SELECT 15, 14, 'Popo³udnie' UNION ALL
+SELECT 16, 15, 'Popo³udnie' UNION ALL
+SELECT 17, 16, 'Popo³udnie' UNION ALL
+SELECT 18, 17, 'Popo³udnie' UNION ALL
+SELECT 19, 18, 'Popo³udnie' UNION ALL
+SELECT 20, 19, 'Popo³udnie' UNION ALL
+SELECT 21, 20, 'Wieczór' UNION ALL
+SELECT 22, 21, 'Wieczór' UNION ALL
+SELECT 23, 22, 'Wieczór' UNION ALL
+SELECT 24, 23, 'Wieczór'
+GO
+
+SELECT * FROM [dbo].[dGodzina]
+
+GO

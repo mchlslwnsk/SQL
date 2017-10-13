@@ -1,0 +1,12 @@
+USE [DSA_BIZ02]
+GO
+
+DELETE FROM dbo.TYP_MIEJSCOWOŒCI;
+GO
+
+INSERT INTO dbo.[TYP_MIEJSCOWOŒCI](tmi_id, tmi_nazwa)
+SELECT 36,	'wiejskie' UNION ALL
+SELECT 37,	'gminne' UNION ALL
+SELECT 38,	'powiatowe' UNION ALL
+SELECT 39,	'wojewódzkie';
+GO
